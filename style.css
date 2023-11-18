@@ -15,6 +15,7 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    padding: 0px 12px;
 }
 
 h1 {
@@ -23,7 +24,7 @@ h1 {
 }
 
 .container {
-    width: 400px;
+    min-width: 400px;
     min-height: 100px;
     border: 2px solid antiquewhite;
     background: transparent;
