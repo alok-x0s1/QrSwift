@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(115deg, rgba(90,27,79,1) 14%, rgba(45,45,184,1) 45%, rgba(9,44,52,0.9585084033613446) 88%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1 {
+    color: antiquewhite;
+    margin-bottom: 2rem;
+}
+
+.container {
+    width: 400px;
+    min-height: 100px;
+    border: 2px solid antiquewhite;
+    background: transparent;
+    padding: 25px 35px;
+    border-radius: 6px;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 1rem;
+}
+
+.container p {
+    font-size: 15px;
+    font-weight: 600;
+    color: antiquewhite;
+}
+
+.container input {
+    border: none;
+    outline: none;
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    color: black;
+    border: 1px solid #494eea;
+    border-radius: 3px;
+    margin: 12px 0px;
+    font-weight: 600;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container button {
+    text-align: center;
+    border: none;
+    background-color: #494eea;
+    border-radius: 3px;
+    padding: 6px;
+    color: white;
+    width: 100%;
+    height: 50px;
+    margin-top: 12px;
+    cursor: pointer;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.container button:hover {
+    background-color: rgba(25, 25, 97, 0.9);
+}
+
+#divImage {
+    width: 200px;
+    overflow: hidden;
+    max-height: 0;
+    border-radius: 5px;
+    transition: max-height 1s;
+}
+
+#divImage img {
+    width: 100%;
+    padding: 10px;
+}
+
+#divImage.show-img {
+    max-height: 300px;
+    margin: 10px auto;
+    border: 1px solid black;
+}
+
+.error {
+    animation: shake 0.1s linear 10;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-2px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+    75% {
+        transform: translateX(2px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.links {
+    width: 400px;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    visibility: hidden;
+}
+
+.links a {
+    border-radius: 6px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+
+.links a > i {
+    font-size: 2.5rem;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
