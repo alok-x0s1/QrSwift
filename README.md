@@ -7,6 +7,9 @@ QrSwift is a lightweight QR code generator website built with HTML, CSS, and Jav
 - **User-Friendly Interface**: Simple and intuitive design for easy navigation.
 - **Fast QR Code Generation**: Quickly generate QR codes for various purposes.
 
+## Live Preview
+  - [QrSwift](https://qrswift.vercel.app/)
+
 ## ScreenShot 
 
 - **Home Screen**
