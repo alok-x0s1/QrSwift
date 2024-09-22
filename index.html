@@ -1,29 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>QrSwift | A QR Code Generator Website</title>
-    <link rel="shortcut icon" href="./Images/img Qr.png" type="image/x-icon">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <h1>QR Code Generator</h1>
-    <div class="container">
-        <p>Enter Your Text or URL</p>
-        <input type="text" placeholder="Text or URL" autofocus required id="inputValue">
-        <div id="divImage">
-            <img src="" alt="" id="imgSrc">
-        </div>
-        <button onclick="qrCodeGenerator()">Generate QR Code</button>
-    </div>
-    <div class="links">
-        <a href="https://github.com/" target="_blank"><i class='bx bxl-github'></i></a>
-        <a href="https://www.linkedin.com/in/" target="_blank"><i class='bx bxl-linkedin'></i></a>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>QrSwift | A QR Code Generator Website</title>
+		<link
+			rel="shortcut icon"
+			href="./Images/img Qr.png"
+			type="image/x-icon"
+		/>
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>QR Code Generator</h1>
+		<div class="container">
+			<p>Enter Your Text or URL</p>
+			<form id="form">
+				<input
+					type="text"
+					placeholder="Text or URL"
+					autofocus
+					required
+					id="inputValue"
+				/>
+				<div id="divImage">
+					<img src="" alt="" id="imgSrc" />
+				</div>
+				<button type="submit">Generate QR Code</button>
+			</form>
+		</div>
+		<div class="links">
+			<a href="https://github.com/alok-x0s1" target="_blank"
+				><i class="bx bxl-github"></i
+			></a>
+			<a href="https://www.linkedin.com/in/alok-x0s1" target="_blank"
+				><i class="bx bxl-linkedin"></i
+			></a>
+		</div>
 
-    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="index.js"></script>
-</body>
+		<script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+		<script src="index.js"></script>
+	</body>
 </html>
